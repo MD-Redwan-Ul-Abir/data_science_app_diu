@@ -13,24 +13,24 @@ class dsSummit extends StatelessWidget {
   final Color buttonCircleColor;
   final double buttonCircleRedious;
   final Icon buttonIcon;
+  final VoidCallback onPressed;
 
-  const dsSummit(
-      {Key? key,
-      required this.buttonText,
-      required this.buttonColor,
-      required this.buttonHeight,
-      required this.buttonWidth,
-      required this.buttonCircleColor,
-      required this.buttonCircleRedious,
-      required this.buttonIcon})
-      : super(key: key);
+  const dsSummit({
+    Key? key,
+    required this.buttonText,
+    required this.buttonColor,
+    required this.buttonHeight,
+    required this.buttonWidth,
+    required this.buttonCircleColor,
+    required this.buttonCircleRedious,
+    required this.buttonIcon,
+    required this.onPressed,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        print('Custom colour button');
-      },
+      onTap: onPressed,
       child: Container(
         alignment: Alignment.center,
         height: buttonHeight,

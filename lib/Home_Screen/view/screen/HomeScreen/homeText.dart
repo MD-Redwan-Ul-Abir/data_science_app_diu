@@ -1,3 +1,4 @@
+import 'package:data_science_app_diu/Home_Screen/view/screen/HomeScreen/homeScreen.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/CustomSubmitButton.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/fonts/ABeeZee_fonts.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/fonts/Allerta_fonts.dart';
@@ -5,6 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:data_science_app_diu/Home_Screen/home.dart';
 
 class homeText extends StatelessWidget {
   const homeText({super.key});
@@ -60,9 +62,9 @@ class homeText extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20.h,
+            height: 17.h,
           ),
-          const Center(
+          Center(
             child: dsSummit(
               buttonText: 'Data Science Summit 2023',
               buttonColor: Colors.black,
@@ -74,8 +76,16 @@ class homeText extends StatelessWidget {
                 Icons.arrow_forward_ios,
                 color: Colors.black,
               ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const home(),
+                  ),
+                );
+              },
             ),
-          )
+          ),
         ],
       ),
     );

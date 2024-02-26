@@ -35,6 +35,7 @@ class customClip1 extends CustomClipper<Path> {
         size.width * 0.4863333, size.height * 0.9926201);
     path.quadraticBezierTo(size.width * 0.3101389, size.height * 1.0065066,
         size.width * -0.0018333, size.height * 0.8005677);
+
     path.close();
     return path;
   }
