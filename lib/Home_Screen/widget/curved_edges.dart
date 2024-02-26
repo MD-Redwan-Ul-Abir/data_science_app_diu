@@ -1,27 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:ui' as ui;
 
-//
-// class customCurve extends CustomClipper<Path> {
-//   @override
-//   Path getClip(Size size) {
-//     var path = Path();
-//     path.moveTo(size.width * 0.0002083, size.height * 0.0034571);
-//     path.lineTo(size.width * 0.3016667, size.height * 0.0042857);
-//     path.lineTo(size.width * 0.3020417, size.height * 0.2138714);
-//     path.quadraticBezierTo(size.width * 0.1798417, size.height * 0.2862714,
-//         size.width * 0.1462583, size.height * 0.2851571);
-//     path.quadraticBezierTo(size.width * 0.1088750, size.height * 0.2872143,
-//         size.width * -0.0003667, size.height * 0.2144286);
-//
-//     return path;
-//   }
-//
-//   @override
-//   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-//     return true;
-//   }
-// }
 class cclip extends StatelessWidget {
   const cclip({super.key});
 

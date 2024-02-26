@@ -16,8 +16,8 @@ class home extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 229,
-
+              height: MediaQuery.of(context).size.height / 4,
+              //height: 229,
               padding: const EdgeInsets.all(0),
               color: Color.fromRGBO(32, 72, 149, 1),
               //clipper: RPSCustomPainter(),
