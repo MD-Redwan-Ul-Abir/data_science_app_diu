@@ -1,5 +1,6 @@
 import 'package:data_science_app_diu/Home_Screen/view/screen/HomeScreen/homeText.dart';
 import 'package:data_science_app_diu/Home_Screen/view/screen/More_About_Us/more_about_us.dart';
+import 'package:data_science_app_diu/Home_Screen/view/screen/Research_Page/research.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/DSbutton.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/curved_edges.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/notificationGIF.dart';
@@ -59,9 +60,15 @@ class home extends StatelessWidget {
               child: Collaboration(),
             ),
             Container(
-              height: 1000.h,
+              height: 1123.h,
               color: Color.fromRGBO(32, 72, 149, 1),
               child: moreAboutUs(),
+            ),
+            Container(
+              height: 3199.h,
+              width: double.infinity,
+              color: Color.fromRGBO(9, 129, 107, 1),
+              child: researchPage(),
             )
           ],
         ),

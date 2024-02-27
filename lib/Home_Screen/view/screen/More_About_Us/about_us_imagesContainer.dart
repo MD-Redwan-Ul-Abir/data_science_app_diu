@@ -9,7 +9,7 @@ class aboutUsImage extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(25.0),
       child: Container(
-        height: 430,
+        height: 420,
         width: 367,
         color: Color.fromRGBO(217, 217, 217, 1),
         child: Column(
@@ -18,7 +18,7 @@ class aboutUsImage extends StatelessWidget {
             Container(
               child: Image.asset('assets/1751117722411960.png'),
             ),
-            Gap(10),
+            Gap(6),
             Padding(
               padding: const EdgeInsets.all(4.0),
               child: Container(

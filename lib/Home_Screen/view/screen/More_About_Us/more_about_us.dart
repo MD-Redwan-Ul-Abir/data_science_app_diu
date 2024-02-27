@@ -71,6 +71,34 @@ class moreAboutUs extends StatelessWidget {
             Center(
               child: aboutUsImage(),
             ),
+            Gap(13),
+            Padding(
+              padding: const EdgeInsets.only(top: 48.0),
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'To Data Driven Approach\nData Mining,\nVisualization &\nOptimization',
+                  style: GoogleFonts.aBeeZee(
+                    fontSize: 27.5,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Gap(20),
+            Padding(
+              padding: const EdgeInsets.only(top: 27.0),
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'A data-driven approach is when decisions are based on analysis and interpretation of hard data rather than on observation. A data-driven approach ensures that solutions and plans are supported by sets of factual information, and not just hunches, feelings and anecdotal evidence.',
+                  style: GoogleFonts.allerta(
+                    fontSize: 17.5,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
