@@ -1,8 +1,9 @@
 import 'package:data_science_app_diu/Home_Screen/view/screen/HomeScreen/homeText.dart';
 import 'package:data_science_app_diu/Home_Screen/view/screen/More_About_Us/more_about_us.dart';
-import 'package:data_science_app_diu/Home_Screen/view/screen/Research_Page/research.dart';
+import 'package:data_science_app_diu/Home_Screen/view/screen/Research_Page/research_first_half.dart';
+import 'package:data_science_app_diu/Home_Screen/view/screen/Research_Page/research_full_page.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/DSbutton.dart';
-import 'package:data_science_app_diu/Home_Screen/widget/curved_edges.dart';
+import 'package:data_science_app_diu/Home_Screen/widget/curved_edges_top.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/notificationGIF.dart';
 import 'package:flutter/material.dart';
 import '../../../widget/customButton.dart';
@@ -65,10 +66,10 @@ class home extends StatelessWidget {
               child: moreAboutUs(),
             ),
             Container(
-              height: 3199.h,
               width: double.infinity,
               color: Color.fromRGBO(9, 129, 107, 1),
-              child: researchPage(),
+              //color: Colors.white,
+              child: researchMain(),
             )
           ],
         ),
