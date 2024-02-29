@@ -6,15 +6,12 @@ class customClipForResearch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 8.9 * 2),
-      child: Container(
-        height: 345,
-        width: 391,
-        alignment: Alignment.centerLeft,
-        color: Colors.transparent,
-        child: customClipResearch(),
-      ),
+    return Container(
+      height: 345,
+      // width: 391,
+      alignment: Alignment.centerLeft,
+      color: Colors.transparent,
+      child: customClipResearch(),
     );
   }
 }

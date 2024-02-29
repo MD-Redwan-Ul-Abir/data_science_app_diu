@@ -37,17 +37,21 @@ class homeText extends StatelessWidget {
           SizedBox(
             height: 20.h,
           ),
-          Text(
-            'First time providing data service in\nBangladesh, Powered By Data Science\nLab of Daffodil International University,\nDhaka, Bangladesh',
-            style: textThemeAllerta.headline1?.copyWith(
-              shadows: [
-                Shadow(
-                  color: Colors
-                      .black, // Use a darker shade of blue or another contrasting color
-                  offset: Offset(2.0, 2.0),
-                  blurRadius: 3.0,
-                ),
-              ],
+          Padding(
+            padding: const EdgeInsets.only(right: 12.0),
+            child: Text(
+              'First time providing data service in Bangladesh, Powered By Data Science Lab of Daffodil International University, Dhaka, Bangladesh',
+              style: textThemeAllerta.headline1?.copyWith(
+                shadows: [
+                  Shadow(
+                    color: Colors
+                        .black, // Use a darker shade of blue or another contrasting color
+                    offset: Offset(2.0, 2.0),
+                    blurRadius: 3.0,
+                  ),
+                ],
+              ),
+              textAlign: TextAlign.justify,
             ),
           ),
           SizedBox(

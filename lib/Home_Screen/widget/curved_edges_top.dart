@@ -1,4 +1,6 @@
+import 'package:data_science_app_diu/Home_Screen/widget/customButton.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class cclip extends StatelessWidget {
   const cclip({super.key});
@@ -13,7 +15,6 @@ class cclip extends StatelessWidget {
           child: Container(
             color: Colors.white,
             //child: const Center(child: Text('Clip Pah')),
-            height: 229,
           ),
         ),
       ),

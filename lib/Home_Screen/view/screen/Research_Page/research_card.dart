@@ -14,22 +14,22 @@ class researchCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(7.0),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(7.0),
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black
-                  .withOpacity(1.0), // Increased opacity for more visibility
-              spreadRadius: 8,
-              blurRadius: 15,
-              offset: Offset(4, 4),
-            ),
-          ],
-        ),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(7.0),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black
+                .withOpacity(.6), // Increased opacity for more visibility
+            spreadRadius: 1,
+            blurRadius: 2,
+            offset: Offset(1, 4),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(7.0),
         child: Column(
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

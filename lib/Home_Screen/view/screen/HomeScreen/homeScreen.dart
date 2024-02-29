@@ -10,6 +10,8 @@ import '../../../widget/customButton.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../Collaboration_page/Collaboration_with_Academia.dart';
+import '../Contribute_Page/Collabrote.dart';
+import '../Sabur_Khan_Page/sabur_khan_main.dart';
 
 class home extends StatelessWidget {
   const home({super.key});
@@ -17,6 +19,7 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // appBar: AppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -31,6 +34,7 @@ class home extends StatelessWidget {
                   children: <Widget>[
                     Positioned(child: cclip()),
                     Positioned(top: 130, left: 14, child: ProjectButton()),
+                    //Center(child: ProjectButton()),
                     Positioned(top: 52.5, left: 370, child: notificationgif()),
                     Positioned(
                         top: 52.3,
@@ -70,7 +74,12 @@ class home extends StatelessWidget {
               color: Color.fromRGBO(9, 129, 107, 1),
               //color: Colors.white,
               child: researchMain(),
-            )
+            ),
+            Container(
+              height: 413.h,
+              child: collabroteMain(),
+            ),
+            saburKhan(),
           ],
         ),
       ),

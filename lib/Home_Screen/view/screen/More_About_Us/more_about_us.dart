@@ -31,11 +31,15 @@ class moreAboutUs extends StatelessWidget {
               padding: const EdgeInsets.only(top: 33),
               child: Container(
                 alignment: Alignment.centerLeft,
-                child: Text(
-                  'Explore the latest data insights and\nstrategied from top industry leaders.\nGain a better understanding of your\nbusiness and customers through data.\nLatest Search Trends. Year in Search\nReport. Google Search Insights.',
-                  style: GoogleFonts.allerta(
-                    fontSize: 18,
-                    color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: Text(
+                    'Explore the latest data insights and strategied from top industry leaders. Gain a better understanding of your business and customers through data. Latest Search Trends. Year in Search Report. Google Search Insights.',
+                    style: GoogleFonts.allerta(
+                      fontSize: 18,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.justify,
                   ),
                 ),
               ),
@@ -52,7 +56,7 @@ class moreAboutUs extends StatelessWidget {
                   buttonWidth: 180,
                   buttonCircleColor: const Color.fromRGBO(9, 129, 107, 1),
                   buttonCircleRedious: 32,
-                  buttonIcon: Icon(
+                  buttonIcon: const Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.black,
                   ),
@@ -96,6 +100,7 @@ class moreAboutUs extends StatelessWidget {
                     fontSize: 17.5,
                     color: Colors.white,
                   ),
+                  textAlign: TextAlign.justify,
                 ),
               ),
             ),

@@ -1,5 +1,5 @@
 import 'package:data_science_app_diu/Home_Screen/view/screen/Research_Page/custom_clip_for_researchPage.dart';
-import 'package:data_science_app_diu/Home_Screen/view/screen/Research_Page/research_container.dart';
+import 'package:data_science_app_diu/Home_Screen/view/screen/Research_Page/research_card.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -44,6 +44,7 @@ class researchFirstPage extends StatelessWidget {
                   fontSize: 19,
                   color: Colors.white,
                 ),
+                textAlign: TextAlign.justify,
               ),
             ),
           ),
@@ -62,7 +63,7 @@ class researchFirstPage extends StatelessWidget {
               title: 'Research Publication',
               assetImage: 'assets/research_publication.jpg',
               onPressed: () {}),
-          Gap(13.5 * 3),
+          Gap(10 * 3),
         ],
       ),
     );

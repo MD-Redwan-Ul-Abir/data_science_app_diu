@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gap/gap.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class customClipResearch extends StatelessWidget {
   const customClipResearch({super.key});
@@ -15,11 +16,11 @@ class customClipResearch extends StatelessWidget {
           color: Color.fromRGBO(217, 217, 217, 1),
           child: Center(
               child: Container(
-            width: 340,
-            height: 250,
+            height: 200.h,
+            width: 288.w,
             child: Column(
               children: [
-                Gap(15.5 * 3),
+                Gap(16 * 3),
                 Text(
                   'Our Expert Lab Students Have Special Skills',
                   style: GoogleFonts.allertaStencil(
@@ -27,14 +28,15 @@ class customClipResearch extends StatelessWidget {
                     color: Color.fromRGBO(17, 17, 17, 1),
                   ),
                 ),
-                Gap(17),
+                Gap(13),
                 Text(
                   'The data science learning goals of lab experiences include enhancing mastery of data science subject matter, developing Statistical analysis, increasing understanding of the Real-life data complexity and ambiguity of empirical work',
                   style: GoogleFonts.allertaStencil(
-                    fontSize: 13.5,
+                    fontSize: 13.65,
                     color: Color.fromRGBO(17, 17, 17, 1),
                   ),
-                )
+                  textAlign: TextAlign.justify,
+                ),
               ],
             ),
           )),
