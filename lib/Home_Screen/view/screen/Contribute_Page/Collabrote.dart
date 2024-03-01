@@ -42,10 +42,10 @@ class collabroteMain extends StatelessWidget {
                   dsSummit(
                     buttonText: "Collaboration Contact",
                     buttonColor: Colors.black,
-                    buttonHeight: 45,
-                    buttonWidth: 236,
+                    buttonHeight: 33,
+                    buttonWidth: 205,
                     buttonCircleColor: Colors.white,
-                    buttonCircleRedious: 32,
+                    buttonCircleRedious: 26.5,
                     buttonIcon: const Icon(
                       Icons.arrow_forward_ios,
                       color: Colors.black,

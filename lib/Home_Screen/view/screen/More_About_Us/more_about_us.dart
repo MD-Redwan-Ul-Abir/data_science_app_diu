@@ -52,10 +52,10 @@ class moreAboutUs extends StatelessWidget {
                 child: dsSummit(
                   buttonText: 'More About Us',
                   buttonColor: Colors.black,
-                  buttonHeight: 46,
-                  buttonWidth: 180,
+                  buttonHeight: 33,
+                  buttonWidth: 157.5,
                   buttonCircleColor: const Color.fromRGBO(9, 129, 107, 1),
-                  buttonCircleRedious: 32,
+                  buttonCircleRedious: 26.5,
                   buttonIcon: const Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.black,

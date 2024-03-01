@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 import 'fonts/Allerta_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class dsSummit extends StatelessWidget {
   final String buttonText;
@@ -33,8 +34,8 @@ class dsSummit extends StatelessWidget {
       onTap: onPressed,
       child: Container(
         alignment: Alignment.center,
-        height: buttonHeight,
-        width: buttonWidth,
+        height: buttonHeight.h,
+        width: buttonWidth.w,
         decoration: BoxDecoration(
           color: buttonColor,
           borderRadius: BorderRadius.circular(22),
@@ -62,8 +63,8 @@ class dsSummit extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(1.0),
                 child: Container(
-                  height: buttonCircleRedious,
-                  width: buttonCircleRedious,
+                  height: buttonCircleRedious.h,
+                  width: buttonCircleRedious.h,
                   decoration: BoxDecoration(
                     color: buttonCircleColor,
                     shape: BoxShape.circle,
