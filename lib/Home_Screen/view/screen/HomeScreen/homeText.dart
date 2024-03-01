@@ -6,7 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:data_science_app_diu/Home_Screen/home.dart';
 
 class homeText extends StatelessWidget {
   const homeText({super.key});
@@ -61,8 +60,8 @@ class homeText extends StatelessWidget {
             child: Image.asset(
               'assets/HomeLogo.png',
               alignment: Alignment.center,
-              height: 250,
-              width: 400,
+              height: 200.h,
+              width: 400.w,
             ),
           ),
           SizedBox(
@@ -72,10 +71,10 @@ class homeText extends StatelessWidget {
             child: dsSummit(
               buttonText: 'Data Science Summit 2023',
               buttonColor: Colors.black,
-              buttonHeight: 45,
-              buttonWidth: 265,
+              buttonHeight: 34.h,
+              buttonWidth: 231.5.w,
               buttonCircleColor: Colors.white,
-              buttonCircleRedious: 31.5,
+              buttonCircleRedious: 25.h,
               buttonIcon: Icon(
                 Icons.arrow_forward_ios,
                 color: Colors.black,

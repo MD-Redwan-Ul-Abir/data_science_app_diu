@@ -9,6 +9,8 @@ class cclip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: 107.h,
+        width: 360.w,
         color: Color.fromRGBO(32, 72, 149, 1),
         child: ClipPath(
           clipper: customClip1(),
@@ -28,17 +30,14 @@ class customClip1 extends CustomClipper<Path> {
     double w = size.width;
     double h = size.height;
 
-    final path = Path();
-    path.moveTo(size.width * -0.0031389, size.height * 0.0023581);
-    path.lineTo(size.width * 0.9994722, size.height * 0.0034934);
-    path.lineTo(size.width * 1.0007500, size.height * 0.8001747);
-    path.quadraticBezierTo(size.width * 0.6731389, size.height * 1.0024454,
-        size.width * 0.4863333, size.height * 0.9926201);
-    path.quadraticBezierTo(size.width * 0.3101389, size.height * 1.0065066,
-        size.width * -0.0018333, size.height * 0.8005677);
-
-    path.close();
-    return path;
+    final path_0 = Path();
+    path_0.moveTo(0, 82.4296);
+    path_0.lineTo(0, 0);
+    path_0.lineTo(414, 0);
+    path_0.lineTo(414, 82.4296);
+    path_0.cubicTo(254.311, 148.058, 163.791, 151.632, 0, 82.4296);
+    path_0.close();
+    return path_0;
   }
 
   @override

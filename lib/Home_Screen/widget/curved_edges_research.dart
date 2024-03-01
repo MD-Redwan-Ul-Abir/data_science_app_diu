@@ -19,8 +19,9 @@ class customClipResearch extends StatelessWidget {
             height: 200.h,
             width: 288.w,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Gap(16 * 3),
                 Text(
                   'Our Expert Lab Students Have Special Skills',
                   style: GoogleFonts.allertaStencil(

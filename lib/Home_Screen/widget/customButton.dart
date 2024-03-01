@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProjectButton extends StatelessWidget {
   const ProjectButton({super.key});
@@ -12,8 +13,8 @@ class ProjectButton extends StatelessWidget {
       },
       child: Container(
         alignment: Alignment.center,
-        height: 35.5,
-        width: 384,
+        height: 25.5.h,
+        width: 320.w,
         decoration: BoxDecoration(
             color: Color.fromRGBO(77, 176, 91, 10),
             borderRadius: BorderRadius.circular(13),

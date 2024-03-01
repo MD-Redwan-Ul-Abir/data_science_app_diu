@@ -20,40 +20,72 @@ class home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: AppBar(),
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        actions: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 7.5, right: 10, top: 4),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image.asset(
+                    "assets/DataScienceLab.png",
+                    scale: 1,
+                    height: 107,
+                    width: 107,
+                  ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Image.asset(
+                          "assets/diu.png",
+                          scale: 5,
+                          height: 100,
+                          width: 100,
+                        ),
+                      ),
+                      Image.asset(
+                        "assets/notification.gif",
+                        scale: 2.25,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
-              height: MediaQuery.of(context).size.height / 4,
+              // height: MediaQuery.of(context).size.height / 4,
               //height: 229,
+              height: 107.h,
+              width: 360.w,
               padding: const EdgeInsets.all(0),
               color: Color.fromRGBO(32, 72, 149, 1),
               //clipper: RPSCustomPainter(),
-              child: SizedBox(
+              child: const SizedBox(
                 child: Stack(
                   children: <Widget>[
                     Positioned(child: cclip()),
-                    Positioned(top: 130, left: 14, child: ProjectButton()),
-                    //Center(child: ProjectButton()),
-                    Positioned(top: 52.5, left: 370, child: notificationgif()),
-                    Positioned(
-                        top: 52.3,
-                        left: 248,
-                        child: Container(
-                          height: 34,
-                          width: 135,
-                          alignment: Alignment.center,
-                          child: Image(
-                            image: AssetImage('assets/diu.png'),
-                          ),
-                        )),
-                    Positioned(top: 52, left: 0, child: dsButton())
+                    Center(
+                        child: Padding(
+                      padding: EdgeInsets.only(top: 0.0),
+                      child: ProjectButton(),
+                    )),
+                    // Positioned(top: 52, left: 0, child: dsButton())
                   ],
                 ),
               ),
             ),
             Container(
-              height: 690,
+              height: 530.h,
               //width: double.infinity,
               color: Color.fromRGBO(32, 72, 149, 1),
               child: homeText(),
