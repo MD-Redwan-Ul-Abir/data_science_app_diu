@@ -38,7 +38,7 @@ class collabroteMain extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  Gap(14.5 * 2),
+                  Gap(14.4 * 2),
                   dsSummit(
                     buttonText: "Collaboration Contact",
                     buttonColor: Colors.black,
