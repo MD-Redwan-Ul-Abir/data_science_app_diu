@@ -6,12 +6,12 @@ import 'package:data_science_app_diu/Home_Screen/widget/DSbutton.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/curved_edges_top.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/notificationGIF.dart';
 import 'package:flutter/material.dart';
-import '../../../widget/customButton.dart';
+import '../../widget/customButton.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../Collaboration_page/Collaboration_with_Academia.dart';
-import '../Contribute_Page/Collabrote.dart';
-import '../Sabur_Khan_Page/sabur_khan_main.dart';
+import 'Collaboration_page/Collaboration_with_Academia.dart';
+import 'Contribute_Page/Collabrote.dart';
+import 'Sabur_Khan_Page/sabur_khan_main.dart';
 
 class home extends StatelessWidget {
   const home({super.key});
@@ -65,39 +65,27 @@ class home extends StatelessWidget {
             Container(
               // height: MediaQuery.of(context).size.height / 4,
               //height: 229,
-              height: 107.h,
-              width: 360.w,
+              height: 150.h,
+              width: 480.w,
               padding: const EdgeInsets.all(0),
               color: Color.fromRGBO(32, 72, 149, 1),
               //clipper: RPSCustomPainter(),
-              child: const SizedBox(
-                child: Stack(
-                  children: <Widget>[
-                    Positioned(child: cclip()),
-                    Center(
-                        child: Padding(
-                      padding: EdgeInsets.only(top: 0.0),
-                      child: ProjectButton(),
-                    )),
-                    // Positioned(top: 52, left: 0, child: dsButton())
-                  ],
-                ),
-              ),
+              child: cclip(),
             ),
             Container(
-              height: 530.h,
+              height: 700.h,
               //width: double.infinity,
               color: Color.fromRGBO(32, 72, 149, 1),
               child: homeText(),
             ),
             Container(
-              height: 430,
+              height: 495.h,
               width: double.infinity,
               color: Color.fromRGBO(9, 129, 107, .06),
               child: Collaboration(),
             ),
             Container(
-              height: 1123.h,
+              height: 1650.h,
               color: Color.fromRGBO(32, 72, 149, 1),
               child: moreAboutUs(),
             ),
@@ -108,7 +96,7 @@ class home extends StatelessWidget {
               child: researchMain(),
             ),
             Container(
-              height: 413.h,
+              height: 580.h,
               child: collabroteMain(),
             ),
             saburKhan(),

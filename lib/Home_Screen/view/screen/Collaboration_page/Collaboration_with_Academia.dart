@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'Collaboration_Industry_log.dart';
 
@@ -19,29 +20,36 @@ class Collaboration extends StatelessWidget {
       color: Color.fromRGBO(32, 72, 149, .92),
       child: Column(
         children: [
-          Gap(66.5),
+          SizedBox(height: 21.h * 4),
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
               'Collaboration With Academia',
               style: GoogleFonts.allerta(
-                fontSize: 21,
+                fontSize: ScreenUtil().setSp(25.5),
                 color: Colors.white,
               ),
             ),
           ),
-          Gap(6),
+          SizedBox(
+            height: 10.h,
+          ),
           collaborationAccademiaLogo(),
-          Gap(12),
+          SizedBox(
+            height: 10.h,
+          ),
           Padding(
             padding: EdgeInsets.all(6),
             child: Text(
               'Collaboration With Industry',
               style: GoogleFonts.allerta(
-                fontSize: 21,
+                fontSize: ScreenUtil().setSp(25.5),
                 color: Colors.white,
               ),
             ),
+          ),
+          SizedBox(
+            height: 5.h,
           ),
           collaborationIndustryLogo(),
         ],

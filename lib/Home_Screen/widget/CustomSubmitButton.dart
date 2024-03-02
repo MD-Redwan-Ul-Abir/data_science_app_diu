@@ -5,6 +5,7 @@ import 'package:gap/gap.dart';
 
 import 'fonts/Allerta_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class dsSummit extends StatelessWidget {
   final String buttonText;
@@ -48,7 +49,9 @@ class dsSummit extends StatelessWidget {
                 padding: EdgeInsets.only(left: 16),
                 child: Text(
                   buttonText,
-                  style: textThemeAllerta.subtitle2?.copyWith(
+                  style: GoogleFonts.allerta(
+                    fontSize: ScreenUtil().setSp(17.4),
+                    color: Colors.white,
                     shadows: [
                       Shadow(
                         color: Colors.black,
@@ -59,7 +62,9 @@ class dsSummit extends StatelessWidget {
                   ),
                 ),
               ),
-              Gap(10),
+              SizedBox(
+                width: 9.w,
+              ),
               Padding(
                 padding: const EdgeInsets.all(1.0),
                 child: Container(

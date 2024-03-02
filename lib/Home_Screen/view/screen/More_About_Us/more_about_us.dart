@@ -6,7 +6,8 @@ import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../widget/CustomSubmitButton.dart';
-import '../HomeScreen/homeScreen.dart';
+import '../homeScreen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class moreAboutUs extends StatelessWidget {
   const moreAboutUs({super.key});
@@ -18,15 +19,21 @@ class moreAboutUs extends StatelessWidget {
       child: Container(
         child: Column(
           children: [
-            Gap(5.5),
+            // Gap(5.5),
+            SizedBox(
+              height: 6.h,
+            ),
             Text(
               'We Analyze & Visualize The Real Life Data For Increasing The Companies Businesses',
               style: GoogleFonts.aBeeZee(
-                fontSize: 27.5,
+                fontSize: ScreenUtil().setSp(34),
                 color: Colors.white,
               ),
             ),
-            Gap(8),
+            //Gap(8),
+            SizedBox(
+              height: 8.h,
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 33),
               child: Container(
@@ -36,7 +43,8 @@ class moreAboutUs extends StatelessWidget {
                   child: Text(
                     'Explore the latest data insights and strategied from top industry leaders. Gain a better understanding of your business and customers through data. Latest Search Trends. Year in Search Report. Google Search Insights.',
                     style: GoogleFonts.allerta(
-                      fontSize: 18,
+                      fontSize: ScreenUtil().setSp(23),
+                      height: 1.25.h,
                       color: Colors.white,
                     ),
                     textAlign: TextAlign.justify,
@@ -44,7 +52,9 @@ class moreAboutUs extends StatelessWidget {
                 ),
               ),
             ),
-            Gap(8),
+            SizedBox(
+              height: 8.h,
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 15),
               child: Container(
@@ -52,10 +62,10 @@ class moreAboutUs extends StatelessWidget {
                 child: dsSummit(
                   buttonText: 'More About Us',
                   buttonColor: Colors.black,
-                  buttonHeight: 33,
-                  buttonWidth: 157.5,
+                  buttonHeight: 48,
+                  buttonWidth: 210,
                   buttonCircleColor: const Color.fromRGBO(9, 129, 107, 1),
-                  buttonCircleRedious: 26.5,
+                  buttonCircleRedious: 36,
                   buttonIcon: const Icon(
                     Icons.arrow_forward_ios,
                     color: Colors.black,
@@ -71,11 +81,15 @@ class moreAboutUs extends StatelessWidget {
                 ),
               ),
             ),
-            Gap(95),
+            SizedBox(
+              height: 110.h,
+            ),
             Center(
               child: aboutUsImage(),
             ),
-            Gap(13),
+            SizedBox(
+              height: 25.h,
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 48.0),
               child: Container(
@@ -83,13 +97,15 @@ class moreAboutUs extends StatelessWidget {
                 child: Text(
                   'To Data Driven Approach\nData Mining,\nVisualization &\nOptimization',
                   style: GoogleFonts.aBeeZee(
-                    fontSize: 27.5,
+                    fontSize: ScreenUtil().setSp(33),
                     color: Colors.white,
                   ),
                 ),
               ),
             ),
-            Gap(20),
+            SizedBox(
+              height: 20.h,
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 27.0),
               child: Container(
@@ -97,7 +113,8 @@ class moreAboutUs extends StatelessWidget {
                 child: Text(
                   'A data-driven approach is when decisions are based on analysis and interpretation of hard data rather than on observation. A data-driven approach ensures that solutions and plans are supported by sets of factual information, and not just hunches, feelings and anecdotal evidence.',
                   style: GoogleFonts.allerta(
-                    fontSize: 17.5,
+                    fontSize: ScreenUtil().setSp(20),
+                    height: 1.4,
                     color: Colors.white,
                   ),
                   textAlign: TextAlign.justify,

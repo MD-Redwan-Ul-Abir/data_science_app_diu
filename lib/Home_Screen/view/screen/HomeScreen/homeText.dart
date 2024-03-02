@@ -1,4 +1,4 @@
-import 'package:data_science_app_diu/Home_Screen/view/screen/HomeScreen/homeScreen.dart';
+import 'package:data_science_app_diu/Home_Screen/view/screen/homeScreen.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/CustomSubmitButton.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/fonts/ABeeZee_fonts.dart';
 import 'package:data_science_app_diu/Home_Screen/widget/fonts/Allerta_fonts.dart';
@@ -6,7 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:data_science_app_diu/Home_Screen/home.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class homeText extends StatelessWidget {
   const homeText({super.key});
@@ -24,6 +24,7 @@ class homeText extends StatelessWidget {
           Text(
             'Upgrade\nYour Business With\nData Scientific Solution',
             style: textThemeABeeZee.headline2?.copyWith(
+              color: Colors.white,
               shadows: [
                 Shadow(
                   color: Colors
@@ -35,13 +36,16 @@ class homeText extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20.h,
+            height: 25.h,
           ),
           Padding(
             padding: const EdgeInsets.only(right: 12.0),
             child: Text(
               'First time providing data service in Bangladesh, Powered By Data Science Lab of Daffodil International University, Dhaka, Bangladesh',
-              style: textThemeAllerta.headline1?.copyWith(
+              style: GoogleFonts.allerta(
+                color: Colors.white,
+                fontSize: 18,
+                height: 1.5,
                 shadows: [
                   Shadow(
                     color: Colors
@@ -55,27 +59,27 @@ class homeText extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 14.h,
+            height: 4.h,
           ),
           Center(
             child: Image.asset(
               'assets/HomeLogo.png',
               alignment: Alignment.center,
-              height: 180.h,
+              height: 270.h,
               width: 400.w,
             ),
           ),
           SizedBox(
-            height: 17.h,
+            height: 20.h,
           ),
           Center(
             child: dsSummit(
               buttonText: 'Data Science Summit 2023',
               buttonColor: Colors.black,
-              buttonHeight: 35,
-              buttonWidth: 234,
+              buttonHeight: 48,
+              buttonWidth: 310,
               buttonCircleColor: Colors.white,
-              buttonCircleRedious: 27,
+              buttonCircleRedious: 34,
               buttonIcon: Icon(
                 Icons.arrow_forward_ios,
                 color: Colors.black,

@@ -9,7 +9,7 @@ class bottomClip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100.h,
+      height: 140.h,
       // width: 414,
       color: Colors.white,
       child: ClipPath(

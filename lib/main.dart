@@ -1,4 +1,4 @@
-import 'package:data_science_app_diu/Home_Screen/view/screen/HomeScreen/homeScreen.dart';
+import 'package:data_science_app_diu/Home_Screen/view/screen/homeScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(360, 690),
+      designSize: const Size(480, 960),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {
