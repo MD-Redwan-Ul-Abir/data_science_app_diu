@@ -201,7 +201,7 @@ class _ProfileState extends State<Profile> {
               child: Container(
                 alignment: Alignment.topCenter,
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 176, left: 82),
+                  padding: const EdgeInsets.only(top: 160, left: 82),
                   child: InkWell(
                     child: Container(
                       width: 180 * 0.17.w,

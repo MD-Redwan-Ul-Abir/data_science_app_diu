@@ -31,7 +31,7 @@ class CustomTextButton extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(prefixIcon, color: Colors.white), // Set icon color
-          SizedBox(width: 8.0),
+          SizedBox(width: 8.1),
           Text(
             buttonText,
             style: TextStyle(color: Colors.white), // Set text color

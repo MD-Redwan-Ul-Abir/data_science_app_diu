@@ -20,7 +20,7 @@ class profileClip extends StatelessWidget {
               Container(
                 alignment: Alignment.topCenter,
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 95, right: 1.2),
+                  padding: const EdgeInsets.only(top: 75, right: 1.2),
                   child: InkWell(
                     child: Container(
                       width: 720 * 0.17.w,
